@@ -1,0 +1,160 @@
+.baner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  // border-bottom: 1px solid #a5a4a4;
+  // padding-bottom: 20px;
+}
+
+.barcall {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+  height: 428px;
+  position: absolute;
+  right: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #ff423477;
+  width: 260px;
+}
+
+.barcall__link {
+  display: flex;
+  font-size: 22px;
+  width: 260px;
+  height: 428px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  background-color: rgba(40, 88, 221, 0.589);
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 599px) {
+  .baner {
+    height: 214px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 0;
+  }
+
+  @media screen and (max-resolution: 2dppx) {
+    .baner {
+      background-image: url(../images/roofimage2.jpg);
+    }
+  }
+
+  @media screen and (max-resolution: 1dppx) {
+    .baner {
+      background-image: url(../images/roofimage2__mobile.jpg);
+    }
+  }
+
+  .barcall {
+    font-size: 20px;
+    width: 130px;
+    height: 214px;
+  }
+
+  .barcall__link {
+    font-size: 10px;
+    width: 100px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .baner {
+    height: 428px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 0;
+  }
+
+  @media screen and (max-resolution: 2dppx) {
+    .baner {
+      background-image: url(../images/roofimage2@2x.jpg);
+    }
+  }
+
+  @media screen and (max-resolution: 1dppx) {
+    .baner {
+      background-image: url(../images/roofimage2.jpg);
+    }
+  }
+
+  .barcall {
+    width: 260px;
+    height: 428px;
+  }
+
+  .barcall__link {
+    font-size: 14px;
+    width: 220px;
+    height: 40px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  .baner {
+    margin: 0 auto;
+    width: 860px;
+    height: 428px;
+  }
+
+  @media screen and (max-resolution: 2dppx) {
+    .baner {
+      background-image: url(../images/roofimage2__desktop@2x.jpg);
+    }
+  }
+
+  @media screen and (max-resolution: 1dppx) {
+    .baner {
+      background-image: url(../images/roofimage2__desktop.jpg);
+    }
+  }
+
+  .barcall {
+    width: 260px;
+    height: 428px;
+  }
+
+  .barcall__link {
+    width: 220px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .baner {
+    margin: 0 auto;
+    width: 960px;
+    height: 428px;
+  }
+
+  @media screen and (max-resolution: 2dppx) {
+    .baner {
+      background-image: url(../images/roofimage2__desktop@2x.jpg);
+    }
+  }
+
+  @media screen and (max-resolution: 1dppx) {
+    .baner {
+      background-image: url(../images/roofimage2__desktop.jpg);
+    }
+  }
+
+  .barcall__link {
+    width: 220px;
+    height: 40px;
+  }
+}

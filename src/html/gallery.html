@@ -1,52 +1,90 @@
-<div id="galery">
-  <a name="galeriya"></a>
-  <p class="arrow3">&#8594;</p>
-  <h2>Наша Галерея</h2>
-  <div class="foto">
-    <img src="images/foto1.jpg" alt="портфолио1" />
-    <a href="galeriya.html">Просмотреть &raquo;</a>
-  </div>
-  <div class="foto">
-    <img src="images/foto2.jpg" alt="портфолио2" />
-    <a href="galeriya2.html">Просмотреть &raquo; </a>
-  </div>
-  <div class="foto">
-    <img src="images/foto3.jpg" alt="портфолио3" />
-    <a href="galeriya3.html">Просмотреть &raquo;</a>
-  </div>
-  <div class="foto" id="foto">
-    <img src="images/foto4.jpg" alt="портфолио4" />
-    <a href="galeriya4.html">Просмотреть &raquo;</a>
-  </div>
-</div>
-<div id="bottom-row">
-  <a name="blog"></a>
-  <div id="blog">
-    <p class="arrow1">&#8594;</p>
-    <h3>Блог</h3>
-    <p>
-      Основное условие качественного выполнения кровельного покрытия — работа
-      опытного профессионала, строгое соблюдение технологий и указанных
-      инструкций от производителей кровельных или других строительных
-      материалов.
-    </p>
-  </div>
-  <div id="social">
-    <p class="arrow1">&#8594;</p>
-    <h3>Социальные сети</h3>
-    <ul class="icon">
-      <li>
-        <a href="#"><img src="images/logo.insta.png" alt="insta" /></a>
+<section class="gallery" id="gallery">
+  <div class="container">
+    <h2 class="gallery__title section-title">
+      <svg class="gallery__icon">
+        <use href="./images/roofer/icons.svg#icon-gallery"></use>
+      </svg>
+      Наша Галерея
+    </h2>
+    <ul class="gallery__media list">
+      <li class="gallery__item">
+        <a href="gallery1.html" class="gallery__link">
+          <picture>
+            <!-- desktop webp -->
+            <source
+              srcset="./images/foto11.webp 1x, ./images/foto11.webp 2x"
+              type="image/webp"
+            />
+
+            <img
+              src="./images/foto11.jpg"
+              alt="портфолио1"
+              class="gallery__img"
+              width="210"
+              height="158"
+            />
+          </picture>
+        </a>
       </li>
-      <li>
-        <a href="#"><img src="images/logo.youtube.png" alt="youtube" /></a>
+      <li class="gallery__item">
+        <a href="gallery2.html" class="gallery__link">
+          <picture>
+            <!-- desktop webp -->
+            <source
+              srcset="./images/foto21.webp 1x, ./images/foto21.webp 2x"
+              type="image/webp"
+            />
+
+            <img
+              src="./images/foto21.jpg"
+              alt="портфолио2"
+              class="gallery__img"
+              width="210"
+              height="158"
+            />
+          </picture>
+        </a>
       </li>
-      <li>
-        <a href="#"><img src="images/logo.facebook.png" alt="facebook" /></a>
+
+      <li class="gallery__item">
+        <a href="gallery.html" class="gallery__link">
+          <picture>
+            <!-- desktop webp -->
+            <source
+              srcset="./images/foto31.webp 1x, ./images/foto31.webp 2x"
+              type="image/webp"
+            />
+
+            <img
+              src="./images/foto31.jpg"
+              alt="портфолио3"
+              class="gallery__img"
+              width="210"
+              height="158"
+            />
+          </picture>
+        </a>
       </li>
-      <li>
-        <a href="#"><img src="images/logo.telegram.png" alt="telegram" /></a>
+
+      <li class="gallery__item">
+        <a href="gallery4.html" class="gallery__link">
+          <picture>
+            <!-- desktop webp -->
+            <source
+              srcset="./images/foto41.webp 1x, ./images/foto41.webp 2x"
+              type="image/webp"
+            />
+
+            <img
+              src="./images/foto41.jpg"
+              alt="портфолио4"
+              class="gallery__img"
+              width="210"
+              height="158"
+            />
+          </picture>
+        </a>
       </li>
     </ul>
   </div>
-</div>
+</section>

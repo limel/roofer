@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,6 +28,10 @@
 
       //= ./html/gallery.html
 
+      <!-- blog -->
+
+      //= ./html/blog.html
+
       <!-- contacs / Контакты -->
 
       //= ./html/contacts.html
@@ -39,6 +43,24 @@
 
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
+
+    <script>
+      const anchors = document.querySelectorAll('a[href*="#"]');
+
+      for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const blockID = anchor.getAttribute('href').substr(1);
+
+          document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        });
+      }
+    </script>
+
     <!-- endinject -->
   </body>
 </html>
